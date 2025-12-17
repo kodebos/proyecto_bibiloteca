@@ -29,16 +29,17 @@ public class Biblioteca {
     public void mostrarTodosLosLibros() {
         System.out.println("\n=== Biblioteca: " + nombre + "===");
         System.out.println("Total de libros: " + libros.size());
-    }
+    
 
-    if (libros.isEmpty()) {
-        System.out.println("No hay libros en la biblioteca");
-        return;
-    }
+        if (libros.isEmpty()) {
+            System.out.println("No hay libros en la biblioteca");
+            return;
+        }
 
-    for (int i = 0; i < libros.size(); i++) {
-        System.out.println("\n Libro #" + (i + 1));
-        Libro libro = libros.get(i);
-        libro.mostrarInfo();
+        for (int i = 0; i < libros.size(); i++) {
+            System.out.println("\n Libro #" + (i + 1));
+            Libro libro = libros.get(i);
+            libro.mostrarInfo();
+        }
     }
 }

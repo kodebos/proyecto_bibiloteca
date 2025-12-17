@@ -44,4 +44,17 @@ public class Libro {
     public void setNumPaginas(int numPaginas) {
         this.numPaginas = numPaginas;
     }
+
+    /**
+     * Cambia el estado a "prestado" del libro
+     */
+
+    public void prestar() {
+        if (prestado) {
+            System.out.println("El libro ya esta prestado");
+        } else {
+            prestado = true;
+            System.out.println("El libro fue prestado");
+        }
+    }
 }

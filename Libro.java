@@ -31,4 +31,17 @@ public class Libro {
     public boolean estaPrestado() {
         return prestado;
     }
+
+    // Modificacion de informacion
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+    
+    public void setNumPaginas(int numPaginas) {
+        this.numPaginas = numPaginas;
+    }
 }
